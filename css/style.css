@@ -1,37 +1,52 @@
-
+/*-- Grid System --*/
 .grid-container {
     width: 100%;
     max-width: 1680px;
-    margin:0 auto;
+    /*margin:0 auto;*/
+    box-sizing:border-box;
 }
 
-/*-- our cleafix hack -- */
-/*.row:before,
+/*-- cleafix hack -- */
+.row:before,
 .row:after {
     content:"";
     display: table ;
     clear:both;
-}*/
+}
+.outline, .outline *{
+    outline: 1px solid #F6A1A1;
+}
 
-/*.col-1{ width: 16.66%; }
+.col-1{ width: 16.66%; }
 .col-2{ width: 33.33%; }
 .col-3{ width: 50%;    }
 .col-4{ width: 66.66%; }
 .col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }*/
+.col-6{ width: 100%;   }
 
-/*.outline, .outline *{
-    outline: 1px solid #F6A1A1;
-}*/
+[class*='col-'] {
+    float: left;
+    min-height: 1px;
+}
 
-/*-- some extra column content styling --*/
-/*[class*='col-'] > p {
- background-color: #FFC2C2;
- padding: 0;
- margin: 0;
- text-align: center;
- color: white;
-}*/
+/*-- General Styling --*/
+
+a{
+  text-decoration: none;
+  color:#b7b6b5;
+  font-size: .8em;
+}
+
+
+ul{
+  text-align: center;
+  list-style-type: none;
+}
+
+ul li{
+  text-decoration: none;
+  display: inline;
+}
 
 /*#bg img {
   position: absolute;
@@ -42,8 +57,11 @@
   height: auto;
 }*/
 
+/*-- Adventure blocks --*/
 .adventures{position: relative;}
 
+
+/*-- Carousel --*/
 /*
 This is the visible area of you carousel.
 Set a width here to define how much items are visible.
@@ -77,4 +95,27 @@ have a fixed width and height (but it's not required).
 .jcarousel li {
     /* Required only for block elements like <li>'s */
   float: left;
+}
+
+/*-- Header Styles --*/
+header{
+  height: 50px;
+  background-color:#4b4946;
+  width: 100%;
+}
+
+header ul{
+  margin:0;
+  padding:20px 5px 5px 0;
+}
+
+nav{
+  height:70px;
+  width: 100%;
+  background-color:#2d2b2a;
+  margin:0 auto;
+}
+
+.logo{
+  color:#fff;
 }

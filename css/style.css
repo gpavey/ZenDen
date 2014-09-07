@@ -1,20 +1,20 @@
 /*-- Grid System --*/
 .grid-container {
-    width: 100%;
-    max-width: 1680px;
-    /*margin:0 auto;*/
-    box-sizing:border-box;
+  width: 100%;
+  max-width: 1680px;
+  /*margin:0 auto;*/
+  box-sizing:border-box;
 }
 
 /*-- cleafix hack -- */
 .row:before,
 .row:after {
-    content:"";
-    display: table ;
-    clear:both;
+  content:"";
+  display: table ;
+  clear:both;
 }
 .outline, .outline *{
-    outline: 1px solid #F6A1A1;
+  outline: 1px solid #F6A1A1;
 }
 
 .col-1{ width: 16.66%; }
@@ -25,27 +25,70 @@
 .col-6{ width: 100%;   }
 
 [class*='col-'] {
-    float: left;
-    min-height: 1px;
+  float: left;
+  min-height: 1px;
 }
 
 /*-- General Styling --*/
 
-a{
+a {
   text-decoration: none;
   color:#b7b6b5;
   font-size: .8em;
 }
 
 
-ul{
-  text-align: center;
+ul {
+  text-align: left;
   list-style-type: none;
 }
 
-ul li{
+ul li {
   text-decoration: none;
-  display: inline;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul li:hover {
+  background: #555;
+  color:#fff;
+}
+
+ul li ul {
+  padding: 0;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 350px;
+  display: none;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transiton: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -ms-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  -transition: opacity 0.2s;
+}
+
+ul li ul li {
+  background: #555;
+  display: block;
+  color: #fff;
+  text-shadow: 0 -1px 0 #000;
+}
+
+ul li ul li:hover { background: #666; }
+
+ul li:hover ul {
+  display: block;
+  opacity: 1;
+  visibility: visible;
 }
 
 /*#bg img {
@@ -55,13 +98,13 @@ ul li{
   margin: auto;
   width: 100%;
   height: auto;
-}*/
+  }*/
 
-/*-- Adventure blocks --*/
-.adventures{position: relative;}
+  /*-- Adventure blocks --*/
+  .adventures{position: relative;}
 
 
-/*-- Carousel --*/
+  /*-- Carousel --*/
 /*
 This is the visible area of you carousel.
 Set a width here to define how much items are visible.
@@ -93,7 +136,7 @@ These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
 .jcarousel li {
-    /* Required only for block elements like <li>'s */
+  /* Required only for block elements like <li>'s */
   float: left;
 }
 

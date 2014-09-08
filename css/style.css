@@ -60,36 +60,6 @@ ul li:hover {
   color:#fff;
 }
 
-ul li ul {
-  padding: 0;
-  position: absolute;
-  top: 48px;
-  left: 0;
-  width: 350px;
-  display: none;
-  opacity: 0;
-  visibility: hidden;
-  -webkit-transiton: opacity 0.2s;
-  -moz-transition: opacity 0.2s;
-  -ms-transition: opacity 0.2s;
-  -o-transition: opacity 0.2s;
-  -transition: opacity 0.2s;
-}
-
-ul li ul li {
-  background: #555;
-  display: block;
-  color: #fff;
-  text-shadow: 0 -1px 0 #000;
-}
-
-ul li ul li:hover { background: #666; }
-
-ul li:hover ul {
-  display: block;
-  opacity: 1;
-  visibility: visible;
-}
 
 /*#bg img {
   position: absolute;
@@ -150,15 +120,4 @@ header{
 header ul{
   margin:0;
   padding:20px 5px 5px 0;
-}
-
-nav{
-  height:70px;
-  width: 100%;
-  background-color:#2d2b2a;
-  margin:0 auto;
-}
-
-.logo{
-  color:#fff;
 }

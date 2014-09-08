@@ -86,24 +86,16 @@ ul li:hover {
   color:#fff;
 }
 
-
-/*#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: auto;
+/*-- Header Styles --*/
+header{
+  height: 50px;
+  background-color:#4b4946;
   width: 100%;
-  height: auto;
-  }*/
-
-  /*-- Adventure blocks --*/
-.adventures{
-
 }
 
-.adventures .img {
-  width: 100%;
-  height: auto;
+header ul{
+  margin:0;
+  padding:20px 5px 5px 0;
 }
 
 
@@ -143,14 +135,11 @@ have a fixed width and height (but it's not required).
   float: left;
 }
 
-/*-- Header Styles --*/
-header{
-  height: 50px;
-  background-color:#4b4946;
-  width: 100%;
+  /*-- Adventure blocks --*/
+.adventures{
 }
 
-header ul{
-  margin:0;
-  padding:20px 5px 5px 0;
+.elephant {
+  background: url(../img/elephant.jpg);
 }
+

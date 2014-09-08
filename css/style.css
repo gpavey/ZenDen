@@ -1,37 +1,91 @@
-
-.grid-container {
-    width: 100%;
-    max-width: 1680px;
-    margin:0 auto;
+@font-face {
+  font-family: "MuseoSans100";
+  src: url(../fonts/MuseoSans_100.otf);
+}
+@font-face {
+  font-family: "MuseoSans500";
+  src: url(../fonts/MuseoSans_500.otf);
+}
+@font-face {
+  font-family: "MuseoSans900";
+  src: url(../fonts/MuseoSans_900.otf);
+}
+@font-face {
+  font-family: MuseoSans300;
+  src: url(../fonts/MuseoSans_300.otf);
+}
+@font-face {
+  font-family: "MuseoSlab500";
+  src: url(../fonts/Museo_Slab_500.otf);
 }
 
-/*-- our cleafix hack -- */
-/*.row:before,
-.row:after {
-    content:"";
-    display: table ;
-    clear:both;
-}*/
+/*-- Grid System --*/
+.grid-container {
+  width: 100%;
+  max-width: 1680px;
+  /*margin:0 auto;*/
+  box-sizing:border-box;
+}
 
-/*.col-1{ width: 16.66%; }
+/*-- cleafix hack -- */
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear:both;
+}
+.outline, .outline *{
+  outline: 1px solid #F6A1A1;
+}
+
+.col-1{ width: 16.66%; }
 .col-2{ width: 33.33%; }
 .col-3{ width: 50%;    }
 .col-4{ width: 66.66%; }
 .col-5{ width: 83.33%; }
-.col-6{ width: 100%;   }*/
+.col-6{ width: 100%;   }
 
-/*.outline, .outline *{
-    outline: 1px solid #F6A1A1;
-}*/
+.col-1-pix {width: 20%}
+.col-2-pix {width: 40%;}
+.col-3-pix {width: 60%}
+.col-4-pix {width: 80%}
+.col-5-pix {width: 100%}
 
-/*-- some extra column content styling --*/
-/*[class*='col-'] > p {
- background-color: #FFC2C2;
- padding: 0;
- margin: 0;
- text-align: center;
- color: white;
-}*/
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+}
+
+/*-- General Styling --*/
+
+a {
+  text-decoration: none;
+  color:#b7b6b5;
+  font-size: .8em;
+}
+
+
+ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+ul li {
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+ul li:hover {
+  color:#fff;
+}
+
 
 /*#bg img {
   position: absolute;
@@ -40,10 +94,20 @@
   margin: auto;
   width: 100%;
   height: auto;
-}*/
+  }*/
 
-.adventures{position: relative;}
+  /*-- Adventure blocks --*/
+.adventures{
 
+}
+
+.adventures .img {
+  width: 100%;
+  height: auto;
+}
+
+
+  /*-- Carousel --*/
 /*
 This is the visible area of you carousel.
 Set a width here to define how much items are visible.
@@ -75,6 +139,18 @@ These are the item elements. jCarousel works best, if the items
 have a fixed width and height (but it's not required).
 */
 .jcarousel li {
-    /* Required only for block elements like <li>'s */
+  /* Required only for block elements like <li>'s */
   float: left;
+}
+
+/*-- Header Styles --*/
+header{
+  height: 50px;
+  background-color:#4b4946;
+  width: 100%;
+}
+
+header ul{
+  margin:0;
+  padding:20px 5px 5px 0;
 }

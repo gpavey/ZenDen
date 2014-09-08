@@ -20,6 +20,7 @@
 .first_nav li {
   padding:0 10px;
 }
+.first_nav a:hover { color: #96c900; }
 
 .first_nav li:last-child {
   padding-right: 0;
@@ -38,6 +39,7 @@
 .main_nav .arrow {
   position: relative;
 }
+
 div .down_arrow {
   width: 70px;
   height:72px;
@@ -220,7 +222,7 @@ div .down_arrow {
 .nav .nav-column:last-child {border-right: none;}
 .nav .nav-column li a:hover { color: #96c900; }
 
-.plus {
+.nav .plus {
   color:#96c900;
   vertical-align: 10%;
 }

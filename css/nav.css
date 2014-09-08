@@ -11,11 +11,26 @@
   border: none;
   outline: none;
 }
+.first_nav {
+  font-family: "MuseoSans100";
+  font-weight: 100;
+  font-size: .8em;
+}
+
+.first_nav li {
+  padding:0 10px;
+}
+
+.first_nav li:last-child {
+  padding-right: 0;
+}
 .main_nav  {
+  font-family: "MuseoSans100";
+  font-size: 1em;
+  font-weight: 100;
   width: 100%;
   height:75px;
   background: #282929;
-
 }
 .main_nav .logo{
   padding-top: 20px;
@@ -24,7 +39,7 @@
   position: relative;
 }
 div .down_arrow {
-  width: 40px;
+  width: 70px;
   height:72px;
   float: left;
 }
@@ -45,31 +60,34 @@ div .down_arrow {
   font-size: .9em;
 }
 
+.nav_items{padding-top: 20px;}
 .nav > li {
   display: block;
   float: left;
 }
 
 .nav {
-  display: inline-block;
+  display: inline;
   position: relative;
   cursor: default;
   z-index: 500;
+  list-style: none;
+
+
 }
 
 .nav > li > a {
   position: relative;
   display: inline-block;
   z-index: 510;
-  height: 72px;
-  padding: 0 20px;
+  height: 52px;
+  padding: 0 15px;
   line-height: 35px;
 
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: .7em;
+  font-family: "MuseoSans100";
+  font-weight: 100;
+  font-size: .75em;
   color: #767676; /*-- text color --*/
-  text-shadow: 0 0 1px rgba(0,0,0,.35);
-
   background:#282929; /*-- nav items background color --*/
 
   -webkit-transition: all .3s ease;
@@ -96,16 +114,16 @@ div .down_arrow {
   display: block;
   float: left;
   width: 1px;
-  height: 24px;
-  padding: 15px 0;
-  line-height: 24px;
+  height: 15px;
+  margin-top: 10px;
+  line-height: 15px;
+  border-left: 1px solid #767676;
 
-  font-family: Helvetica, Arial, sans-serif;
-  font-weight: bold;
+  font-family: "MuseoSans500";
+
   font-size: 13px;
   color: #999999;
   text-shadow: 0 0 1px rgba(0,0,0,.35);
-
   background: #282929;
 
   -webkit-transition: all .3s ease 1s;
@@ -119,8 +137,7 @@ div .down_arrow {
 
 .nav > li.nav-search input[type="text"]:focus,
 .nav > li.nav-search:hover input[type="text"] {
-  width: 110px;
-  padding: 15px 20px;
+  width: 80px;
 
   -webkit-transition: all .3s ease .1s;
   -moz-transition: all .3s ease .1s;
@@ -132,13 +149,13 @@ div .down_arrow {
 .nav > li.nav-search input[type="submit"] {
   display: block;
   float: left;
-  width: 20px;
-  height: 54px;
-  padding: 0 45px;
+  height: 15px;
+  margin-top: 10px;
+  padding-left: 55px;
   cursor: pointer;
 
   background: #282929 url(../img/search.png) no-repeat center center;
-  background-size: 18px auto;
+  background-size: 13px auto;
 
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -149,16 +166,15 @@ div .down_arrow {
 
 .nav > li > div {
   position: fixed;
- /* display: block;*/
   width: 70%;
   top: 125px;
-  left: 17%;
+  left: 16%;
 
   opacity: 0;
   visibility: hidden;
   overflow: hidden;
 
-  background-color:rgba(0, 0, 0, 0.5);
+  background-color:rgba(0, 0, 0, 0.7);
   border-radius: 0 0 3px 3px;
 
   -webkit-transition: all .3s ease .15s;
@@ -176,28 +192,28 @@ div .down_arrow {
 
 .nav .nav-column {
   float: left;
-  width: 19.8%;
-  height: 350px;
+  width: 19.9%;
+  height: 285px;
   padding: 2.5%;
   border-right:1px solid #808080; /*-- text color --*/
 }
 
-.nav .nav-column h3 {
-  margin: 20px 0 10px 0;
-  line-height: .9em;
-
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: .9em;
-  color: #372f2b;
+.nav .nav-column .title {
+  font-family: "MuseoSans500";
+  font-weight: 500;
+  font-size: 12px;
+  width: 100%;
+  color: #808080;
   text-transform: uppercase;
 }
 
 .nav .nav-column li a {
   display: block;
-  line-height: 26px;
-
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 13px;
+  line-height: 20px;
+  width: 100%;
+  font-family: "MuseoSans100";
+  font-size: 12px;
+  font-weight: bold;
   color: #808080;
 }
 

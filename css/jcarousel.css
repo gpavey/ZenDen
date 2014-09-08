@@ -10,6 +10,8 @@
 .jcarousel {
     position: relative;
     overflow: hidden;
+    width: 100%;
+    height: auto;
 }
 
 .jcarousel ul {
@@ -28,6 +30,7 @@
     display: block;
     max-width: 100%;
     height: auto !important;
+    width: 100%;
 }
 
 /** Carousel Controls **/

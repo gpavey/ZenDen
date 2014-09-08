@@ -1,3 +1,24 @@
+@font-face {
+  font-family: "MuseoSans100";
+  src: url(../fonts/MuseoSans_100.otf);
+}
+@font-face {
+  font-family: "MuseoSans500";
+  src: url(../fonts/MuseoSans_500.otf);
+}
+@font-face {
+  font-family: "MuseoSans900";
+  src: url(../fonts/MuseoSans_900.otf);
+}
+@font-face {
+  font-family: MuseoSans300;
+  src: url(../fonts/MuseoSans_300.otf);
+}
+@font-face {
+  font-family: "MuseoSlab500";
+  src: url(../fonts/Museo_Slab_500.otf);
+}
+
 /*-- Grid System --*/
 .grid-container {
   width: 100%;
@@ -45,7 +66,7 @@ ul {
 
 ul li {
   text-decoration: none;
-  display: inline-block;
+  display: inline;
   position: relative;
   cursor: pointer;
   -webkit-transition: all 0.2s;
@@ -56,7 +77,6 @@ ul li {
 }
 
 ul li:hover {
-  background: #555;
   color:#fff;
 }
 

@@ -1,0 +1,66 @@
+/*-- Grid System --*/
+.grid-container {
+  width: 100%;
+  max-width: 1680px;
+  /*margin:0 auto;*/
+  box-sizing:border-box;
+}
+
+/*-- cleafix hack -- */
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear:both;
+}
+.outline, .outline *{
+  outline: 1px solid #F6A1A1;
+}
+
+.col-1{ width: 16.66%; }
+.col-2{ width: 33.33%; }
+.col-3{ width: 50%;    }
+.col-4{ width: 66.66%; }
+.col-5{ width: 83.33%; }
+.col-6{ width: 100%;   }
+
+.col-1-pix {width: 20%}
+.col-2-pix {width: 40%; float: left;}
+.col-3-pix {width: 60%}
+.col-4-pix {width: 80%}
+.col-5-pix {width: 100%}
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+}
+
+/*-- Adventure blocks --*/
+.adventures{
+ margin:0 auto;
+}
+
+.adventures img  {
+  opacity: 1;
+  z-index: 2;
+  margin: 0;
+  max-width: 100%;
+  transition: opacity .25s ease-in-out;
+  -moz-transition: opacity .25s ease-in-out;
+  -webkit-transition: opacity .25s ease-in-out;
+}
+
+
+.adventures img:hover {
+  opacity: 0;
+}
+
+.adventures .change_image {
+  position: absolute;
+  top:0;
+  left:0;
+  min-width: 100%;
+  height: 100%;
+  background-color: blue;
+  overflow: hidden;
+}*/

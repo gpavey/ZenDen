@@ -11,7 +11,7 @@
   src: url(../fonts/MuseoSans_900.otf);
 }
 @font-face {
-  font-family: MuseoSans300;
+  font-family: "MuseoSans300";
   src: url(../fonts/MuseoSans_300.otf);
 }
 @font-face {
@@ -23,6 +23,7 @@
 .grid-container {
   width: 100%;
   max-width: 1680px;
+  min-width: 1090px;
   /*margin:0 auto;*/
   box-sizing:border-box;
 }
@@ -64,6 +65,7 @@ a {
   font-size: .8em;
 }
 
+a:hover {color: #96c900;}
 
 ul {
   text-align: left;
@@ -82,28 +84,17 @@ ul li {
   transition: all 0.2s;
 }
 
-ul li:hover {
-  color:#fff;
+
+/*-- Header Styles --*/
+header{
+  height: 50px;
+  background-color:#333333;
+  width: 100%;
 }
 
-
-/*#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin: auto;
-  width: 100%;
-  height: auto;
-  }*/
-
-  /*-- Adventure blocks --*/
-.adventures{
-
-}
-
-.adventures .img {
-  width: 100%;
-  height: auto;
+header ul{
+  margin:0;
+  padding:20px 5px 5px 0;
 }
 
 
@@ -143,14 +134,108 @@ have a fixed width and height (but it's not required).
   float: left;
 }
 
-/*-- Header Styles --*/
-header{
-  height: 50px;
-  background-color:#4b4946;
-  width: 100%;
+  /*-- Adventure blocks --*/
+.adventures{
 }
 
-header ul{
-  margin:0;
-  padding:20px 5px 5px 0;
+/*-- Deals Styles --*/
+.deals {
+  background-color:#282929;
+  height: 170px;
+  width: 100%;
+  color: #767676;
+  text-align: center;
+}
+
+.deals .epic {
+  font-family: "MuseoSans300";
+  font-weight: 300;
+  font-size: 1.5em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-top: 45px;
+}
+
+.deals .line {
+  margin:0 auto;
+  margin-top: 5px;
+  width: 90px;
+  border-top: 2px solid #767676;
+}
+
+.deals .experience {
+  margin-top: 10px;
+  font-family: "MuseoSans100";
+  font-weight: 100;
+  font-size: 1.2em;
+  letter-spacing: 1.2px;
+}
+
+/*-- Upgrade blocks --*/
+.upgrade {
+  width: 100%;
+  height:360px;
+}
+
+.upgrade .square {
+  width: 25vw;
+  height: 25vw;
+  background:#ddd;
+  float: left;
+}
+
+.upgrade .first_img {
+  max-width: 100%
+  background: url(../img/upgrade_beach.jpg);
+}
+
+/*-- Footer Style --*/
+footer {
+  width: 100%;
+  height: 270px;
+  background: #282929;
+  font-family: "MuseoSans100";
+  color:#767676;
+  padding-top:40px;
+  font-size: 11px;
+  letter-spacing: .6px;
+}
+
+footer a {
+  font-size: 11px;
+  letter-spacing: .6px;
+  color:#767676;
+}
+
+footer ul li {
+  display: block;
+  line-height: 25px;
+}
+
+footer .col-1 li:first-child {
+  font-family: "MuseoSans900";
+  font-weight: 900;
+  font-size: .8em;
+  text-transform: uppercase;
+  color:#b7b6b5;
+}
+footer .blog_items li {
+  line-height: 15px;
+  padding: 5px 0;
+}
+
+footer .blog_items li:nth-child(3) {
+  border-top: 1px solid rgba(118, 118, 118, .4);
+  border-bottom: 1px solid rgba(118, 118, 118, .4);
+  margin:5px 20px 0 0;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+footer .blog_items li:last-child{margin-top: 5px;}
+
+footer .social {margin-top: 10px;}
+
+footer .social-item {
+  padding-right: 11px;
 }

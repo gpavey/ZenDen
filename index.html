@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
@@ -8,6 +9,8 @@
 	<title>Zen Den</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" href="css/font-awesome-min.css">
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/style.css">
@@ -32,13 +35,13 @@
 
 		<div class="main_nav row">
 			<div class="col-1"></div>
-			<div class="col-1 logo"><img src="img/logo.png" height="33" alt=""></div>
+			<div class="col-1 logo"><img src="img/logo.png" height="33" alt="logo image"></div>
 			<div class="col-4 arrow">
-				<div class="down_arrow"><img src="img/down.gif" height="8" alt=""></div>
+				<div class="down_arrow"><img src="img/down.gif" height="8" alt="small arrow image"></div>
 				<div class="nav_items">
 					<ul class="nav">
-						<li><a href="#">Adventure Packages <span class="caret">v</span></a></li>
-						<li><a href="#">Destinations <span class="caret">v</span></a>
+						<li><a href="#">Adventure Packages <i class="fa fa-chevron-down"></i></a></li>
+						<li><a href="#">Destinations <i class="fa fa-chevron-down"></i></a>
 							<div>
 								<div class="nav-column">
 									<ul>
@@ -103,18 +106,16 @@
 										<li><a href="#">Southeast Tour</a></li>
 										<li><a href="#">Lodge Safari (A)</a></li>
 										<li><a href="#">Lodge Safari (B)</a></li>
-										<li><a href="#">&nbsp; </li>
+										<li><a href="#">&nbsp; </a></li>
 										<li class="title">North America <span class="plus">&nbsp;+</span></li>
 										<li><a href="#">New Tours Coming</a></li>
 									</ul>
 								</div>
 							</div>
-
 						</li>
-						<li><a href="#">Resources <span class="caret">v</span></a></li>
-						<li><a href="#">About Us <span class="caret">v</span></a></li>
-						<li><a href="#">My Trip <span class="caret">v</span></a></li>
-						<!-- <li><a>|</a></li> -->
+						<li><a href="#">Resources <i class="fa fa-chevron-down"></i></a></li>
+						<li><a href="#">About Us <i class="fa fa-chevron-down"></i></a></li>
+						<li><a href="#">My Trip <i class="fa fa-chevron-down"></i></a></li>
 						<li class="nav-search">
 							<form action="#">
 								<input type="text" placeholder=" Search...">
@@ -171,39 +172,76 @@
 				<p class="jcarousel-pagination"></p>
 			</div>
 		</div>
-
-		<div class="adventures">
-			<div class="row">
-				<div class="col-2-pix">
-					<div class="elephant">
-						<a href="#"></a>
-					</div>
-				</div>
-				<div class="col-2-pix">
-					<a href="#"><img src="img/balloon.jpg" alt=""></a>
-					<a href="#"><img src="img/map.jpg" alt=""></a>
-					<a href="#"><img src="img/beach_experience.jpg" alt=""></a>
-				</div>
-				<div class="col-1-pix">
-					<a href="#"><img src="img/boat.jpg" alt=""></a>
-				</div>
-			</div>
-			<!-- <div>
-				<a href=""><img src="img/small_beach.jpg"></a>
-				<a href=""><img src="img/overlander.jpg"></a>
-				<a href=""><img src="img/embark.jpg"></a>
-				<a href=""><img src="img/tree.jpg"></a>
-			</div> -->
+		<div class="deals">
+			<div class="epic">Epic Deals</div>
+			<div class="line"></div>
+			<div class="experience">Uganda Gorilla Trek, Zanzibar Beach Experience &amp; Mt. Kilimanjaro, Tanzania</div>
 		</div>
 
+		<div class="upgrade">
+			<div class="square first_img"><a href="#"></a></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+		</div>
 	</div>
-	<footer></footer>
+	<footer>
+		<div class="col-1"></div>
+		<div class="col-1 blog_items">
+			<ul>
+				<li class="not_me">Straight from our blog</li>
+				<li><a href="#">Twenty-two weeks in Africa<br/>
+			May 5, 2014</a></li>
+				<li><a href="#">Africa saved my life.<br/>
+				May 25, 2014</a></li>
+				<li class="not_me"><a href="#">I wait for happiness.<br/>
+				May 29, 2014</a></li>
+		</div>
+		<div class="col-1">
+			<ul>
+				<li>Links + Downloads</li>
+				<li><a href="#">Security Updates</a></li>
+				<li><a href="#">Terms + Conditions</a></li>
+				<li><a href="#">Medical Release Form</a></li>
+				<li><a href="#">FAQ</a></li>
+				<li><a href="#">Brochure</a></li>
+				<li><a href="#">Privacy Policy</a></li>
+			</ul>
+		</div>
+		<div class="col-1">
+			<ul>
+				<li>My Trip</li>
+				<li><a href="#">Login</a></li>
+				<li><a href="#">Travel Basket</a></li>
+				<li><a href="#">Packing List</a></li>
+				<li><a href="#">Deals</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+		<div class="col-1">
+			<ul>
+				<li>Newsletter</li>
+				<li>Epic adventure seekers follow us for last minute tour deals and new tour updates. </li>
+				<li><input type="text" placeholder="Email" style="width: 100%; height:20px;"></li>
+				<li class="social">
+					<a class="social-item" href="#"><i class="fa fa-twitter fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-facebook fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-youtube fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-instagram fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-vine fa-lg"></i></a>
+					<a class="social-item" href="#"><i class="fa fa-pinterest fa-lg"></i></a>
+				</li>
+				<li><small>&#169; 2004 Epicous Adventure Travel</small></li>
+			</ul>
+		</div>
+		<div class="col-1"></div>
+	</footer>
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
-<script src="js/vendor/jcarousel.js"></script>
-
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+	<script src="js/plugins.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/vendor/jcarousel.js"></script>
 </body>
 </html>

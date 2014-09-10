@@ -27,7 +27,6 @@ body {
   width: 100%;
   max-width: 1680px;
   min-width: 1090px;
-  /*margin:0 auto;*/
   box-sizing:border-box;
 }
 
@@ -38,6 +37,7 @@ body {
   display: table ;
   clear:both;
 }
+
 .outline, .outline *{
   outline: 1px solid #F6A1A1;
 }
@@ -61,6 +61,9 @@ body {
 }
 
 /*-- General Styling --*/
+.clearfix {
+  clear:both;
+}
 
 a {
   text-decoration: none;
@@ -73,7 +76,6 @@ a:hover {color: #96c900;}
 ul {
   text-align: left;
   list-style-type: none;
-  padding:0;
 }
 
 ul li {
@@ -138,9 +140,6 @@ have a fixed width and height (but it's not required).
   float: left;
 }
 
-  /*-- Adventure blocks --*/
-.adventures{
-}
 
 /*-- Deals Styles --*/
 .deals {
@@ -175,27 +174,87 @@ have a fixed width and height (but it's not required).
   letter-spacing: 1.2px;
 }
 
-/*-- Upgrade blocks --*/
-.upgrade {
+/*-- Avdventure Blocks Styles --*/
+
+.adventures {
+  display: block;
+  max-width:100%;
+  font-family: "MuseoSans_300";
+}
+
+.adventures .teasers {
+  position: relative;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+
+.adventures .info,
+.adventures .more_info {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.adventures .offer,
+.adventures .upgrade {
+  width: 25%;
+  height:auto;
+  position: relative;
+  float:left;
+  margin: 0;
+  padding:0;
+}
+
+.more_info {display: none;}
+
+.adventures .upgrade {
+  display:none;
+}
+
+.adventures .fig_caption {
+  height: 30%;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  border-right: 1px solid #ddd;
+  color:#000;
+  font-family: "MuseoSans500";
+  font-size:1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.adventures ul li {
+display: block;
+text-align: center;
+}
+
+.adventures ul:first-child {
+  padding-top: 15px;
+}
+
+
+.adventures img {
   width: 100%;
   height:100%;
+  display: block;
 }
 
-.upgrade .square {
-  width: 25vw;
-  height: 25vw;
-  background:#ddd;
-  float: left;
-}
-
-.upgrade .first_img {
-  max-width: 100%
-  background: url(../img/upgrade_beach.jpg);
+.adventures .figure a:hover {
+  opacity: .5;
 }
 
 /*-- Footer Style --*/
 footer {
   width: 100%;
+  max-width: 1680px;
+  min-width: 1090px;
   height: 270px;
   background-color: #282929;
   font-family: "MuseoSans100";
@@ -206,7 +265,7 @@ footer {
 }
 
 footer a {
-  font-size: 11px;
+  font-size: 9px;
   letter-spacing: .6px;
   color:#767676;
 }
@@ -241,5 +300,5 @@ footer .blog_items li:last-child{margin-top: 5px;}
 footer .social {margin-top: 10px;}
 
 footer .social-item {
-  padding-right: 8px;
+  padding-right: 11px;
 }

@@ -1,0 +1,110 @@
+@font-face {
+  font-family: "MuseoSans300";
+  src: url(../fonts/MuseoSans_300.otf);
+}
+
+@font-face {
+  font-family: "MuseoSans900";
+  src: url(../fonts/MuseoSans_900.otf);
+}
+
+@font-face {
+  font-family: "MuseoSans500";
+  src: url(../fonts/MuseoSans_500.otf);
+}
+
+/*-- General Styling --*/
+
+a {
+  text-decoration: none;
+  color:#b7b6b5;
+  font-size: .8em;
+}
+
+a:hover {color: #96c900;}
+
+ul {
+  text-align: left;
+  list-style-type: none;
+}
+
+ul li {
+  text-decoration: none;
+  display: inline;
+  position: relative;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+
+div {
+  display: block;
+}
+main {
+display: block;
+max-width: 1450px;
+}
+.adventures {
+max-width:100%;
+font-family: "MuseoSans_300";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+}
+
+.adventures .offer,
+.adventures .upgrade {
+  width: 25%;
+  height:auto;
+  position: relative;
+  float:left;
+  margin: 0;
+}
+
+.adventures .upgrade {display:none;}
+
+.adventures .fig_caption {
+  height: 30%;
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  border-right: 1px solid #ddd;
+  color:#000;
+  font-family: "MuseoSans500";
+  font-size:1.2em;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.adventures ul li {
+display: block;
+text-align: center;
+}
+
+.adventures ul:first-child {
+  padding-top: 15px;
+}
+
+
+.adventures img {
+  width: 100%;
+  height:100%;
+  border-right: 1px solid #ddd;
+  opacity: .7;
+}
+
+.adventures .figure a:hover {
+  opacity: .5;
+}

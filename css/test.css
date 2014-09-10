@@ -24,11 +24,11 @@
 .col-5{ width: 83.33%; }
 .col-6{ width: 100%;   }
 
-.col-1-pix {width: 20%}
-.col-2-pix {width: 40%; float: left;}
-.col-3-pix {width: 60%}
-.col-4-pix {width: 80%}
-.col-5-pix {width: 100%}
+.col-1-pix {width: 20%;}
+.col-2-pix {width: 40%;}
+.col-3-pix {width: 60%;}
+.col-4-pix {width: 80%;}
+.col-5-pix {width: 100%;}
 
 [class*='col-'] {
   float: left;
@@ -44,6 +44,7 @@
   opacity: 1;
   z-index: 2;
   margin: 0;
+
   max-width: 100%;
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;

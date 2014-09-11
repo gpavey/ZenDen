@@ -4,178 +4,45 @@
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/test2.css">
   <link rel="stylesheet" href="css/font-awesome-min.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+
   <script src="js/vendor/modernizr-2.6.2.min.js"></script>
 </head>
 
 <body>
   <main>
 
-    <div class="adventures teasers">
-        <div class="row">
-          <div class="col-2-pix">
-            <div class="flip">
-              <div class="info">
-                <a><img src="img/elephant.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/elephant.jpg" style="opacity:.4";></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-2-pix">
-            <div class="row">
-              <div class="col-6 flip">
-                <div class="info">
-                  <img src="img/balloon.jpg">
-                </div>
-                <div class="more_info">
-                  <a><img src="img/balloon.jpg" style="opacity:.4";></a>
-                </div>
-              </div>
-            </div>
-
-            <div class="row">
-              <a class="col-3 flip">
-                <div class="info">
-                  <img src="img/map.jpg">
-                </div>
-                <div class="more_info">
-                  <img src="img/map.jpg" style="opacity:.4";>
-                </div>
-              </a>
-
-              <a class="col-3 flip">
-                <img src="img/beach_experience.jpg" class="info" alt ="">
-                <div class="more_info">
-                  <img src="img/beach_experience.jpg" style="opacity:.4" >
-                </div>
-              </a>
-            </div>
-          </div>
-
-          <div class="col-1-pix flip">
-              <div class="info">
-                <a><img src="img/boat.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/boat.jpg" style="opacity:.4";></a>
-              </div>
-          </div>
+  <div class="search_bar">
+    <form>
+    <ul>
+      <li>
+        <div class="inner-addon right-addon">
+          <i class="fa fa-map-marker"></i>
+          <input type="text" placeholder="  Destination" size="24"/>
         </div>
-
-        <div class="row">
-          <div class="col-1-pix flip">
-              <div class="info">
-                <a><img src="img/beach_small.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/overlander.jpg"></a>
-              </div>
-          </div>
-
-          <div class="col-1-pix flip">
-              <div class="info">
-                <a><img src="img/overlander.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/tree.jpg"></a>
-              </div>
-          </div>
-
-
-          <div class="col-2-pix flip">
-              <div class="info">
-                <a><img src="img/embark.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/embark.jpg" style="opacity:.4;"></a>
-              </div>
-          </div>
-
-
-          <div class="col-1-pix flip">
-              <div class="info">
-                <a><img src="img/tree.jpg"></a>
-              </div>
-              <div class="more_info">
-                <a><img src="img/overlander.jpg"></a>
-              </div>
-          </div>
+      </li>
+      <li><input type="select" option placeholder="  Tour Theme" size="14" ></li>
+      <li><input type="text" placeholder="  Duration" size="14"></li>
+      <li>
+        <div class="inner-addon right-addon">
+          <i class="fa fa-calendar"></i>
+          <input type="text" class="datepicker" placeholder="  Date" size="10" >
         </div>
-    </div>
-
-    <div class="clearfix"></div>
-
-    <div class="adventures">
-      <div class="switch">
-        <div class="offer">
-          <a><img src="img/kenya.jpg" alt="">
-            <div class="fig_caption">
-              <ul>
-                <li >Upgraded beach experience</li>
-                <li class="upgrade_cost">5 days <i class="fa fa-long-arrow-right"></i> $1,119</li>
-              </ul>
-            </div>
-          </a>
+      </li>
+      <li>
+        <div class="inner-addon right-addon">
+          <i class="fa fa-search"></i>
+          <input type="submit" class="search" value="Search" style="width:140px; height:29px;" >
         </div>
-        <div class="upgrade">
-          <a><img src="img/beach_upgrade.jpg" alt=""></a>
-        </div>
-      </div>
-
-      <div class="switch">
-        <div class="offer">
-          <a><img src="img/kenya.jpg" alt="">
-            <div class="fig_caption">
-              <ul>
-                <li >Upgraded beach experience</li>
-                <li class="upgrade_cost">5 days <i class="fa fa-long-arrow-right"></i> $1,119</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="upgrade">
-          <a><img src="img/beach_upgrade.jpg" alt=""></a>
-        </div>
-      </div>
-
-      <div class="switch">
-        <div class="offer">
-          <a><img src="img/kenya.jpg" alt="">
-            <div class="fig_caption">
-              <ul>
-                <li >Upgraded beach experience</li>
-                <li class="upgrade_cost">5 days <i class="fa fa-long-arrow-right"></i> $1,119</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="upgrade">
-          <a><img src="img/beach_upgrade.jpg" alt=""></a>
-        </div>
-      </div>
-
-      <div class="switch">
-        <div class="offer">
-          <a><img src="img/kenya.jpg" alt="">
-            <div class="fig_caption">
-              <ul>
-                <li>Upgraded beach experience</li>
-                <li class="upgrade_cost">5 days <i class="fa fa-long-arrow-right"></i> $1,119</li>
-              </ul>
-            </div>
-          </a>
-        </div>
-        <div class="upgrade">
-          <a><img src="img/beach_upgrade.jpg" alt=""></a>
-        </div>
-      </div>
-    </div>
+      </li>
+    </ul>
+  </form>
+  </div>
 
   </main>
 
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

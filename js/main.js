@@ -76,6 +76,8 @@ $(function () {
           $(this).find('.info').show();
   });
 
-
+$(function() {
+    $(".datepicker").datepicker();
+  });
 
 })

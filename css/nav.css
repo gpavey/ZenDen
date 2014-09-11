@@ -1,3 +1,9 @@
+/*--
+light bg   color: #282929
+dark bg    color: #808080;
+font       color: #767676
+a:hover    color: #96c900
+--*/
 
 .nav,
 .nav a,
@@ -48,17 +54,11 @@ div .down_arrow {
 
 .down_arrow img{
   position: absolute;
-  top: 0px;
+  top: 2px;
   left: 0px;
 }
 
 .nav li { list-style: none; }
-
-.nav_caret {
-  line-height: 10px;
-  font-weight: bold;
-  font-size: .9em;
-}
 
 .nav_items{padding-top: 20px;}
 .nav > li {
@@ -87,8 +87,8 @@ div .down_arrow {
   font-family: "MuseoSans100";
   font-weight: 100;
   font-size: .75em;
-  color: #767676; /*-- text color --*/
-  background:#282929; /*-- nav items background color --*/
+  color: #767676;
+  background:#282929;
 
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
@@ -122,7 +122,7 @@ div .down_arrow {
   font-family: "MuseoSans500";
 
   font-size: 13px;
-  color: #999999;
+  color: #767676;
   text-shadow: 0 0 1px rgba(0,0,0,.35);
   background: #282929;
 
@@ -165,10 +165,10 @@ div .down_arrow {
 }
 
 .nav > li > div {
-  position: fixed;
-  width: 70%;
-  top: 125px;
-  left: 16%;
+  position: absolute;
+  width: 980px;
+  top: 55px;
+  left: -425%;
 
   opacity: 0;
   visibility: hidden;
@@ -225,16 +225,3 @@ div .down_arrow {
   vertical-align: 10%;
 }
 
-/*li > a:after {
-    color: #888;
-    content: ' ▾';
-}
-
-li > a:hover:after {
-    color: #444;
-    content: ' ▾';
-}
-
-li > a:only-child:after {
-    content: '';
-}*/

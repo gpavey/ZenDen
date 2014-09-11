@@ -103,40 +103,84 @@ header ul{
   padding:20px 5px 5px 0;
 }
 
+/*-- Search --*/
+.search_bar {
+  width: 714px;
+  height:51px;
+  border-radius: 8px;
+  background-color:rgba(0, 0, 0, 0.3);
+  position: absolute;
+  top:60%;
+  left:25%;
+}
 
-  /*-- Carousel --*/
-/*
-This is the visible area of you carousel.
-Set a width here to define how much items are visible.
-The width can be either fixed in px or flexible in %.
-Position must be relative!
-*/
+.search_bar input {
+  border-radius: 3px;
+  border: none;
+  height: 27px;
+  font-family: "MuseoSans100";
+  color:#767676;
+  font-size: 13px;
+  letter-spacing: .6px;
+}
+
+.search_bar div {display: inline-block;}
+
+.search_bar ul {
+  margin:11px 0 0 0;
+  padding-left:12px;
+}
+
+.search_bar .search {
+  background-color:#ff9933;
+  color: #fff;
+  text-align: left;
+  width: 27px;
+  border: none;
+}
+
+.search_bar li:last-child .fa {
+  color:#fff;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+  background-color:white;
+}
+
+.inner-addon {
+  position: relative;
+}
+
+.inner-addon .fa {
+  position: absolute;
+  color:#bababa;
+  pointer-events: none;
+}
+
+.right-addon .fa { right: 6px;top:6px;}
+
+.left-addon input  { padding-left:  30px; }
+.right-addon input { padding-right: 30px; }
+
+
+/*-- Carousel --*/
 .jcarousel {
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
-/*
-This is the container of the carousel items.
-You must ensure that the position is relative or absolute and
-that the width is big enough to contain all items.
-*/
 .jcarousel ul {
   width: 20000em;
   position: relative;
 
-  /* Optional, required in this case since it's a <ul> element */
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-/*
-These are the item elements. jCarousel works best, if the items
-have a fixed width and height (but it's not required).
-*/
 .jcarousel li {
-  /* Required only for block elements like <li>'s */
   float: left;
 }
 
@@ -204,6 +248,7 @@ have a fixed width and height (but it's not required).
   float:left;
   margin: 0;
   padding:0;
+  opacity: .7;
 }
 
 .more_info {display: none;}
@@ -218,7 +263,7 @@ have a fixed width and height (but it's not required).
   background: #fff;
   position: absolute;
   bottom: 0;
-  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
   color:#000;
   font-family: "MuseoSans500";
   font-size:1.2em;
@@ -231,12 +276,12 @@ have a fixed width and height (but it's not required).
 }
 
 .adventures ul li {
-display: block;
-text-align: center;
+  display: inline-block;
 }
 
-.adventures ul:first-child {
-  padding-top: 15px;
+.adventures ul li:last-child {
+  padding-left: 60px;
+  opacity: .4;
 }
 
 
@@ -260,9 +305,10 @@ footer {
   font-family: "MuseoSans100";
   color:#767676;
   padding-top:40px;
-  font-size: 11px;
+  font-size: 10px;
   letter-spacing: .6px;
 }
+footer ul {padding:0;margin:0;}
 
 footer a {
   font-size: 9px;
@@ -293,6 +339,7 @@ footer .blog_items li:nth-child(3) {
   margin:5px 20px 0 0;
   padding-bottom: 10px;
   padding-top: 10px;
+  width: 75%;
 }
 
 footer .blog_items li:last-child{margin-top: 5px;}
